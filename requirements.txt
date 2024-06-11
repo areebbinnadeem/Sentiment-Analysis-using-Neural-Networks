@@ -1,8 +1,8 @@
 pandas
 numpy
-keras
+keras==2.13.1
 nltk
-tensorflow
+tensorflow==2.13.0
 Flask
 matplotlib
 seaborn

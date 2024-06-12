@@ -1,18 +1,24 @@
 import streamlit as st
 import json
+import os
 from keras.preprocessing.text import tokenizer_from_json
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
 import numpy as np
 
+# Get the directory of the current file
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
 # Load the tokenizer
-with open('src\tokenizer.json') as f:
+tokenizer_path = os.path.join(current_dir, 'tokenizer.json')
+with open(tokenizer_path) as f:
     tokenizer_config = json.load(f)
     tokenizer_json = json.dumps(tokenizer_config)  # Convert dictionary to JSON string
     tokenizer = tokenizer_from_json(tokenizer_json)
 
 # Load the model
-model = load_model('cnn_model.h5')
+model_path = os.path.join(current_dir, 'cnn_model.h5')
+model = load_model(model_path)
 
 # Tokenizer configuration
 MAX_SEQUENCE_LENGTH = 500

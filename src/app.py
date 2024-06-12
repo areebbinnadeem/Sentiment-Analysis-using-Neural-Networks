@@ -6,7 +6,7 @@ from keras.models import load_model
 import numpy as np
 
 # Load the tokenizer
-with open('tokenizer.json') as f:
+with open('src\tokenizer.json') as f:
     tokenizer_config = json.load(f)
     tokenizer_json = json.dumps(tokenizer_config)  # Convert dictionary to JSON string
     tokenizer = tokenizer_from_json(tokenizer_json)

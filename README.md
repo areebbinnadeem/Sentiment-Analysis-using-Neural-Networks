@@ -45,18 +45,18 @@ The model is trained using a Convolutional Neural Network (CNN) on a dataset of 
 
 ### Model Accuracy and Loss
 
-![Training and Validation Accuracy](Training and Validation Accuracy.PNG)
+![Training and Validation Accuracy](TrainingAndValidationAccuracy.PNG)
 
-![Training and Validation Loss](Training and Validation Loss.PNG)
+![Training and Validation Loss](TrainingAndValidationLoss.PNG)
 
 ### Confusion Matrix
 
-![Confusion Matrix](Confusion Matrix.PNG)
+![Confusion Matrix](ConfusionMatrix.PNG)
 
 ## Acknowledgements
-**Streamlit:** For providing an easy way to create web apps.
-**TensorFlow & Keras:** For powerful tools to build and train neural networks.
-**FREEPIK:** For different emotions image.
+- **Streamlit:** For providing an easy way to create web apps.
+- **TensorFlow & Keras:** For powerful tools to build and train neural networks.
+- **FREEPIK:** For different emotions image.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
@@ -66,5 +66,5 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Contact
 For any questions or feedback, feel free to reach out:
-**Email:** M.AreebBinNadeem@gmail.com
-**GitHub:** areebbinnadeem
+* **Email:** M.AreebBinNadeem@gmail.com
+* **GitHub:** areebbinnadeem
